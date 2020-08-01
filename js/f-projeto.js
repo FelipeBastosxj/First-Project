@@ -13,5 +13,5 @@ setInterval(() =>{
     }
     logo[i].classList.add('mostrando')
     console.log(i)
-},5000)
+},3000)
 
