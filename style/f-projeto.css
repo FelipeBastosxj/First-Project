@@ -186,7 +186,7 @@ a, li, ul{
 .mostrando{
     z-index: 100;
     animation: slide 0.2s ease-in;
-    
+    position: absolute;
 }
 
 .bara-itens{
@@ -207,4 +207,82 @@ a, li, ul{
     padding-right: 80px;
     cursor: pointer;
     width: 100%;
+}
+
+.c-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 110;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.c-slide, p, h1, h4{
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.c-slide h1{
+    font-size: 130px;
+}
+
+.c-slide h4{
+    text-align: center !important;
+    font-size: 20px;
+    padding: 0px 360px 0px 360px;
+    line-height: 30px;
+}
+
+.c-slide button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.s-b1{
+    background-color: #FD7250;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 248.64px;
+    height: 60.78px;
+    border-radius: 50px;
+    margin-right: 20px;
+    transition: 0.5s;
+
+}
+
+.s-b2{
+    background-color: transparent;
+    border: 3px solid #2ED47C;
+    color: #2ED47C;
+    width: 248.64px;
+    height: 60.78px;
+    border-radius: 50px;
+    font-weight: bold;
+    outline: none;
+    transition: 0.5s;
+
+}
+
+.separador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-b1:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+    color: black;
+}
+
+.s-b2:hover{
+    background-color: #2ED47C;
+    color: #ffffff;
 }
