@@ -4,18 +4,23 @@
     box-sizing: border-box;
     padding: 0;
     font-family: glacial, indifference, sans-serif;
-    overflow-x: hidden;
 }
 
 .img-logo{
+    width: 100%;
+    height: 565px;
+    z-index: -10;
+    overflow: hidden;
+}
+
+
+.t1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    background-image: url(./bg-4.jpg);
     width: 100%;
-    height: 567px;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,21 +28,6 @@
     overflow: hidden;
 }
 
-.img-logo2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-image: url(./bg-5.jpg);
-    width: 100%;
-    height: 567px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -10;
-    overflow: hidden;
-}
 
 .s-menu{
     display: flex;
@@ -51,14 +41,14 @@
 
 .menu, .redes-sociais, .logo{
     display: flex;
-    padding: 22px;
+    padding-right: 20px;
 }
 
 a, li, ul{
     display: flex;
     list-style: none;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .logo h1{
@@ -176,19 +166,29 @@ a, li, ul{
 @keyframes slide{
     from{
         transform: scale(1.1);
-        opacity: 0;
     }
     to{
         transform: scale(1);
-        opacity: 1;
+    }
+}
+
+@keyframes slide2{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
     }
 }
 .mostrando{
-    z-index: 100;
     animation: slide 0.2s ease-in;
-    position: absolute;
+    background-image: url(./bg-5.jpg);
 }
 
+.mostrando2{
+    animation: slide2 0.2s ease-in;
+    background-image: url(./bg-4.jpg);
+}
 .bara-itens{
     display: flex;
     justify-content: space-between;
@@ -197,7 +197,6 @@ a, li, ul{
     width: 100%;
     background-color: #F4F5F8;
     height: 102.72px;
-    margin-top: 566px;
     z-index: 110;
     overflow: hidden;
 }
@@ -232,7 +231,6 @@ a, li, ul{
 .c-slide h4{
     text-align: center !important;
     font-size: 20px;
-    padding: 0px 360px 0px 360px;
     line-height: 30px;
 }
 

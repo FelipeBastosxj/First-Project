@@ -1,17 +1,9 @@
-logo = document.querySelectorAll('.pegar')
-i = 0
+logo = document.querySelector('.pegar')
 
-
+console.log(logo)
 setInterval(() =>{
-    logo.forEach(e=>{
-        e.classList.remove('mostrando')
-    })
-
-    i++
-    if(i==2){
-        i=0
-    }
-    logo[i].classList.add('mostrando')
-    console.log(i)
+   logo.classList.toggle('mostrando')
+   logo.classList.toggle('mostrando2')
+   
 },3000)
 
