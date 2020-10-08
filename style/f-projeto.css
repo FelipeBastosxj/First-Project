@@ -49,6 +49,7 @@ a, li, ul{
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
+    width: 100%;
 }
 
 .logo h1{
@@ -181,12 +182,12 @@ a, li, ul{
     }
 }
 .mostrando{
-    animation: slide 0.2s ease-in;
+    animation: slide 0.4s ease-in;
     background-image: url(./bg-5.jpg);
 }
 
 .mostrando2{
-    animation: slide2 0.2s ease-in;
+    animation: slide2 0.4s ease-in;
     background-image: url(./bg-4.jpg);
 }
 .bara-itens{
@@ -220,7 +221,6 @@ a, li, ul{
 }
 
 .c-slide, p, h1, h4{
-    margin-bottom: 20px;
     color: #FFFFFF;
 }
 
@@ -283,4 +283,79 @@ a, li, ul{
 .s-b2:hover{
     background-color: #2ED47C;
     color: #ffffff;
+}
+
+.container-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-c3{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.s-c3 p, h3{
+    color: black;
+    padding-left: 60px;
+}
+
+.s-c3 button{
+    width: 171.7px;
+    height: 53.19px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #FD7250;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: white;
+    margin: 0 auto;
+    margin-top: 45PX;
+}
+
+.h3-flex{
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 60px !important;
+}
+
+.h3-flex h3{
+    color: black;
+    display: flex;
+}
+
+.N{
+    font-weight: 800 !important; 
+}
+
+.b{
+    font-weight: 100 !important;
+    padding-left: 30px !important;
+}
+
+.LOGO-C3{
+    font-size: 60px;
+    margin-bottom: 0px !important;
+}
+
+.s-c3 p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.p-1{
+    font-style: italic;
+    font-size: 40px;
+}
+
+.p-2{
+    color: #848695 !important;
 }
