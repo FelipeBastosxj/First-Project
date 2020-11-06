@@ -8,7 +8,7 @@
 
 .img-logo{
     width: 100%;
-    height: 565px;
+    height: 85vh;
     z-index: -10;
     overflow: hidden;
 }
@@ -37,6 +37,7 @@
     left: 0;
     right: 0;
     z-index: 110;
+    width: 100%;
 }
 
 .menu, .redes-sociais, .logo{
@@ -197,12 +198,15 @@ a, li, ul{
     justify-content: center;
     width: 100%;
     background-color: #F4F5F8;
-    height: 102.72px;
+    height: 15vh;
     z-index: 110;
     overflow: hidden;
 }
 
 .bara-itens li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 100px;
     padding-right: 80px;
     cursor: pointer;
@@ -293,7 +297,7 @@ a, li, ul{
 .s-c3{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
     padding-top: 120px;
     padding-bottom: 20px;
     padding-left: 50px;
@@ -318,6 +322,7 @@ a, li, ul{
     color: white;
     margin: 0 auto;
     margin-top: 45PX;
+    outline: none;
 }
 
 .h3-flex{
@@ -358,4 +363,87 @@ a, li, ul{
 
 .p-2{
     color: #848695 !important;
+}
+
+.s-c4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.img1{
+    height: 584.3px;
+    width: 457.5px;
+    margin-left: 100px;
+
+}
+
+.img2{
+    width: 365.63px;
+    height: 395.27px;
+    margin-top: -250px;
+    margin-right: 430px;
+}
+
+.s-b3{
+    transition: 0.2s ease-in-out;
+}
+.s-b3:hover{
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.521); 
+
+}
+
+.container-4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.t-1, .t-2, .t-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 87px;
+    padding-right: 77px;
+}
+
+#tp{
+    color: #C0C2C9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+#tp1{
+    color: #35D681;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.ul-t{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.ul-t li{
+    margin-left: 0px;
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #181B31;
+    line-height: 20px;
+}
+
+.c-h3{
+    padding-left: 0px;
+    font-weight: 900;
+    font-size: 30px;
 }
