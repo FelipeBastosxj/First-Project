@@ -9,7 +9,6 @@
 .img-logo{
     width: 100%;
     height: 85vh;
-    z-index: -10;
     overflow: hidden;
 }
 
@@ -446,4 +445,99 @@ a, li, ul{
     padding-left: 0px;
     font-weight: 900;
     font-size: 30px;
+}
+
+.container-5{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img3{
+    width: 1050.52px;
+    height: 642.23px;
+    margin-left: -200px;
+}
+
+.c-5text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-5text h1{
+    color: black;
+    font-size: 60px;
+    margin-left: -120px;
+    padding-top: 50px;
+}
+
+.c-5text p{
+    padding-top: 90px;
+    color: #7B7D89;
+    text-align: center;
+    padding-left:80px;
+    padding-right: 80px;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.segura-A{
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.c-5text a{
+    background-color: #2ED47C;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#s-ab2{
+    background-color: transparent;
+    display: flex;
+    margin-left: -30px;
+    width: 250px;
+    height: 70px;
+    font-weight: bold;
+    border-radius: 0;
+    color: black;
+}
+
+#s-ab2:hover{
+    color: #FD7250;
+    transition: 0.5s ease-in-out;
+}
+
+.container-6{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.d-1, .d-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.i-1 img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.i-2 img{
+    width: 70px;
+    height: 70px;
+}
+
+.i-1, .i-2{
+    display: flex;
 }
