@@ -516,7 +516,7 @@ a, li, ul{
 
 .container-6{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
     margin-top: 100px;
 }
@@ -525,6 +525,7 @@ a, li, ul{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0px 80px 0px 100px;
 }
 
 .i-1 img{
@@ -540,4 +541,42 @@ a, li, ul{
 
 .i-1, .i-2{
     display: flex;
+}
+
+.i-1 h1,p{
+    color: black;
+}
+
+.container-6 h1{
+    color: black;
+    font-size: 24px;
+}
+
+.container-6 p{
+    color: #FD987F;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.o-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.d-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    color: #9394A1;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-left: 85px;
+}
+
+.container-6 .d-2{
+    margin-left: 0px;
 }
