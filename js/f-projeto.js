@@ -1,6 +1,5 @@
 logo = document.querySelector('.pegar')
 
-console.log(logo)
 setTimeout(() =>{
    logo.classList.add('mostrando')
 
@@ -11,4 +10,4 @@ setInterval(() =>{
    logo.classList.toggle('mostrando')
    logo.classList.toggle('mostrando2')
    
-},3000)
+},5000)
