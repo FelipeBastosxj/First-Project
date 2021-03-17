@@ -217,7 +217,7 @@ a, li, ul{
     position: absolute;
     z-index: 110;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .c-slide, p, h1, h4{
@@ -226,18 +226,22 @@ a, li, ul{
 
 .c-slide h1{
     font-size: 130px;
+    opacity: 0;
 }
 
 .c-slide h4{
     text-align: center !important;
     font-size: 20px;
     line-height: 30px;
+    margin: 20px 390px 0px 390px;
+    opacity: 0;
 }
 
 .c-slide button{
     margin-top: 30px;
     margin-bottom: 20px;
     cursor: pointer;
+    opacity: 0;
 }
 
 .s-b1{
@@ -272,6 +276,7 @@ a, li, ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .s-b1:hover{
@@ -288,6 +293,7 @@ a, li, ul{
 .container-3{
     display: flex;
     justify-content: space-between;
+    opacity: 0;
 }
 
 .s-c3{
@@ -398,6 +404,7 @@ a, li, ul{
     justify-content: space-between;
     margin-top: 100px;
     width: 100%;
+    opacity: 0;
 }
 
 .t-1, .t-2, .t-3{
@@ -609,6 +616,13 @@ a, li, ul{
     width: 360px;
     height: 389.19px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.c7-img img:hover{
+    transform: translate3d(0px, -3px, 0px);
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.425); 
 }
 
 .c7-img div{
@@ -641,6 +655,11 @@ a, li, ul{
     margin-top: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.c7-img h2:hover{
+    color: #FD7B5B;
 }
 
 .c7-img h5{
@@ -784,4 +803,132 @@ a, li, ul{
 
 .s-m{
     color: #2ED47C;
+}
+
+/* ANIMAÇÕES FADE */
+
+@keyframes fadeslider{
+    from{
+        opacity: 0;
+        transform: translate3d(0px, 0px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, -45px,0px);
+    }
+}
+
+@keyframes fadeslider2{
+    from{
+        opacity: 0;
+        transform: translate3d(0px, 0px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, -25px,0px);
+    }
+}
+
+.c-slide p{
+    animation: fadeslider 0.8s ease-in-out forwards;
+
+}
+
+.c-slide h1{
+    animation: fadeslider2 0.8s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+
+.c-slide h4{
+    animation: fadeslider2 0.8s ease-in-out forwards;
+    animation-delay: 0.8s;
+
+}
+
+.s-b1{
+    animation: fadeslider2 0.8s ease-in-out forwards;
+    animation-delay: 1.2s;
+
+}
+
+.s-b2{
+    animation: fadeslider2 0.8s ease-in-out forwards;
+    animation-delay: 1.6s;
+
+
+}
+
+@keyframes fadeslider3{
+    from{
+        transform: translate3d(0px, 0px,0px);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0px, -25px,0px);
+        opacity: 1;
+    }
+}
+
+.container-3.ativo .a1{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    opacity: 0;
+}
+
+.container-3.ativo .a2{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+
+}
+
+.container-3.ativo .a3{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+
+}
+
+.container-3.ativo .a4{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+.container-3.ativo .a5{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+}
+
+.container-3.ativo .a6{
+    animation: fadeslider3 0.8s ease-in-out forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.container-3.ativo .img1{
+    animation: fade 0.5s ease-in-out;
+
+}
+
+.container-3.ativo .img2{
+    animation: fade 1.5s ease-in-out;
+}
+
+.container-4.ativo {
+    transition: 0.7s ease-in-out;
+}
+.ativo{
+    opacity: 1;
 }
